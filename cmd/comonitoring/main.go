@@ -3,6 +3,7 @@ package main
 import (
 	"comonitoring/config"
 	"comonitoring/internal/comonitoring/api/rest"
+	absms "comonitoring/internal/sms"
 	"comonitoring/pkg/logger"
 	"github.com/ilyakaznacheev/cleanenv"
 )
@@ -16,8 +17,11 @@ func main() {
 	var cfg config.Config
 	err := cleanenv.ReadEnv(&cfg)
 
+	// Create the SMS provider
+	kavenegar := absms.NewKavenegar(cfg.Kavenegar.ApiKey)
+
 	// Create new Rest API server
-	s, err := rest.NewServer(cfg)
+	s, err := rest.NewApiServer(cfg, &kavenegar)
 	if err != nil {
 		log.Fatalln(err.Error())
 	}
