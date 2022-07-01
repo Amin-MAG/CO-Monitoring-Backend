@@ -36,7 +36,7 @@ func NewServer(healthModule, metricModule Module, cfg config.Config) (*http.Serv
 	promExporter := ginprom.New(
 		ginprom.Engine(engine),
 		ginprom.Subsystem("gin"),
-		ginprom.Path("/metric"),
+		ginprom.Path("/metrics"),
 	)
 	engine.Use(promExporter.Instrument())
 

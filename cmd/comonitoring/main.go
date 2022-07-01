@@ -21,7 +21,7 @@ func main() {
 	kavenegar := absms.NewKavenegar(cfg.Kavenegar.ApiKey)
 
 	// Create new Rest API server
-	s, err := rest.NewApiServer(cfg, &kavenegar)
+	s, err := rest.NewApiServer(cfg, kavenegar)
 	if err != nil {
 		log.Fatalln(err.Error())
 	}
