@@ -10,4 +10,7 @@ type Config struct {
 		ServingPort string `env:"SERVER_PORT" env-default:"8080" env-description:"Serving Port number for CO monitoring"`
 		LogLevel    string `env:"LOG_LEVEL" env-default:"debug" env-description:"Log Level for application logger"`
 	}
+	Kavenegar struct {
+		ApiKey string `env:"KAVENEGAR_API_KEY" env-default:"6B483932586E7562562F776479643931547767735275333257386D4B364C4B4457742F6368727A376E4A343D" env-description:"The API Key for Kavenegar SMS Provider"`
+	}
 }

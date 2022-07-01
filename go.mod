@@ -22,6 +22,7 @@ require (
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/joho/godotenv v1.3.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
+	github.com/kavenegar/kavenegar-go v0.0.0-20200629080648-6e28263b7162 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
