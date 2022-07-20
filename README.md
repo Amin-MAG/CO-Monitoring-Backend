@@ -2,6 +2,8 @@
 
 It's the backend repository for the IUST embedded project 2022.
 
+<img src="./docs/images/poster.png" title="" alt="" data-align="center">
+
 ## Overview
 
 This repository consists of a simple Golang server (using the Gin framework), Prometheus, and Grafana service. You can run these services with docker-compose.
