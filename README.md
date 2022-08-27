@@ -1,7 +1,5 @@
 # CO Monitoring System
 
-It's the backend repository for the IUST embedded project 2022.
-
 <img src="./docs/images/poster.png" title="" alt="" data-align="center">
 
 ## Overview
